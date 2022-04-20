@@ -1,0 +1,117 @@
+<!-- 
+    Student ID:
+    Name: 
+    Praticals Class Time:
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="" method="POST" target="https://twaaut.cdms.westernsydney.edu.au/twainfo/form.asp">
+            <div class="orderInfo">
+                <fieldset>
+                    <legend>Order Information</legend>
+
+                    <label for="date">Date of order:</label>
+                    <input type="date" class="date" name="dateOfOrder" required><br>
+    
+                    <label for="cname">Club name (*):</label>
+                    <input type="text" id="cname" name="clubName" required>
+    
+                    <label for="cNo">Club No(*):</label>
+                    <input type="text" id="cNo" name="clubNo" required><br>
+    
+                    <label for="pAdd">Postal Address (*):</label>
+                    <input type="text" id="pAdd" name="postalAddress">
+    
+                    <label for="contact">Contact Name (*):</label>
+                    <input type="text" id="contact" name="contact" required><br>
+    
+                    <label for="postCode">Post Code (*):</label>
+                    <input type="text" id="postCode" name="postCode">
+    
+                    <label for="ph">Contact Ph (*):</label>
+                    <input type="text" id="ph" name="ph" required><br>
+
+                </fieldset>
+            </div>
+
+            <div class="badgeInfo">
+                <fieldset>
+                    <legend>Badge Information</legend>
+
+                    <label for="lname">First name:</label>
+                    <input type="text" required>
+                    <label for="lname">Surname:</label>
+                    <input type="text" required>
+                    <br>
+                    <div class="SelectOption">
+                        <!-- Officer Rank -->
+                        <label for="OffcierRank">Officer Rank: </label>
+                        <select id="OffcierRank">
+                            <option value="Pre">Pre</option>
+                            <option value="M">M</option>
+                            <option value="Ex">Ex</option>
+                            <option value="Sgt">Sgt</option>
+                            <option value="VP">VP</option>
+                        </select>
+
+                        <!-- Badge Option -->
+                        <!-- <label for="badgeOption">Badge Option: </label>
+                        <select id="badgeOption">
+                            <option hidden disabled selected value> -- select an option -- </option>
+                            <option value="A">A Standard Badge $7.50</option>
+                            <option value="B">B Plastic Alligator Clip (with Safety Pin) $8.00</option>
+                            <option value="C">C Magnetic Badge Clip (no Pin) $10.00</option>
+                        </select><br> -->
+                        <br>
+                        <p><b>Badge Option</b></p>
+                        <div class="badgeOption">
+                            <input type="checkbox" name="A" value="A">
+                            <label for="quantity">A Standard Badge $7.50:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <br>
+                            <input type="checkbox" name="A" value="A">
+                            <label for="quantity">B Plastic Alligator Clip (with Safety Pin) $8.00</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                            <br>
+                            <input type="checkbox" name="A" value="A">
+                            <label for="quantity">C Magnetic Badge Clip (no Pin) $10.00</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        </div>
+                    </div>
+                  </fieldset>
+
+                  <p><b>Please complete lines marked with this sign (*)</b></p>
+
+                <div class="payment">
+                    <fieldset>
+                        <legend>Payment</legend>
+
+                        <!-- Payment Method -->
+                        <label for="payment"><b>PAYMENT METHOD: </b></label>
+                        <select id="payment">
+                            <option value="Cheque">Cheque</option>
+                            <option value="Money Order ">Money Order </option>
+                            <option value="Direct Deposit">Direct Deposit</option>
+                            <option value="Credit Card" selected>Credit Card</option>
+                        </select>
+
+                        
+                    </fieldset>
+                </div>
+            </div>
+            
+
+        </form>
+    </div>
+</body>
+</html>

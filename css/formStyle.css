@@ -1,0 +1,71 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.orderInfo {
+    padding: 10px 0 10px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.orderInfo > fieldset > input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.badgeInfo {
+    padding: 10px 0 10px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.badgeInfo > fieldset > input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+fieldset {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 0; 
+    border-radius: 10px;
+    border-color: aquamarine;
+}
+
+fieldset > legend {
+    font-size: 120%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .orderInfo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .badgeInfo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        width: 100%;
+        margin: 0 auto;
+        display: table-cell;
+    }
+}
